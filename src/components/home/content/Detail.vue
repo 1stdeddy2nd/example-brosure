@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="row gy-3">
+  <div class="row gy-3 align-items-md-center">
     <div class="col-3">
       <img
         :src="SmallPhoneImage"

@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="bg-white p-3 fs-9 d-md-block d-none">
+  <div class="bg-white p-3 fs-8 d-md-block d-none">
     <div class="d-flex gap-2 align-items-center mb-2">
       <img
         :src="ProfileImage"

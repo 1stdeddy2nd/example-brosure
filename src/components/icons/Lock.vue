@@ -2,15 +2,17 @@
 import {defineComponent} from "vue";
 
 export default defineComponent({
-  name: 'LockIcon'
+  name: 'LockIcon',
+  props: {
+    width: {type: Number, default: 12}
+  }
 })
 </script>
 
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="12"
-    height="13"
+    :width="width"
     viewBox="0 0 12 13"
     fill="none"
   >

@@ -9,6 +9,9 @@ import ApplePayLogo from "@/assets/logos/applepay.png";
 import AmexLogo from "@/assets/logos/amex.png";
 export default defineComponent({
   name:'HomeContentPaymentCard',
+  props: {
+    imgSize: {type: Number, default: 21}
+  },
   setup(){
     return {
       VisaLogo,
@@ -28,32 +31,32 @@ export default defineComponent({
     <img
       :src="VisaLogo"
       alt="visa-logo"
-      width="21"
+      :width="$props.imgSize"
     >
     <img
       :src="ShopPayLogo"
       alt="shop-pay-logo"
-      width="21"
+      :width="$props.imgSize"
     >
     <img
       :src="PaypalLogo"
       alt="paypal-logo"
-      width="21"
+      :width="$props.imgSize"
     >
     <img
       :src="GooglePayLogo"
       alt="google-pay-logo"
-      width="21"
+      :width="$props.imgSize"
     >
     <img
       :src="ApplePayLogo"
       alt="apple-pay-logo"
-      width="21"
+      :width="$props.imgSize"
     >
     <img
       :src="AmexLogo"
       alt="amex-logo"
-      width="21"
+      :width="$props.imgSize"
     >
   </div>
 </template>
