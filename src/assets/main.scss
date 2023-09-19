@@ -1,0 +1,90 @@
+html, body {
+    font-family: Manrope, sans-serif;
+    line-height: 18px;
+}
+
+/*
+* ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇
+* ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇
+* ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇ ⬇ CUSTOM BOOTSTRAP ⬇
+*/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+        "blue-dark": rgba(37, 47, 61, 1),
+        "blue-primary": rgba(44, 126, 248, 1),
+        "blue-light": rgba(237, 243, 253, 1),
+        "green-light": rgba(89, 174, 67, 1),
+        "grey-light": rgba(250, 250, 250, 1),
+        "grey-primary": rgba(150, 150, 150, 1)
+    )
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/*
+ * * ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇
+ * * ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇
+ * * ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇ ⬇ CUSTOM WIDTH ⬇
+ */
+$width : (
+    'xl': 1400px !important,
+    'lg': 1200px !important,
+    'md': 992px !important,
+    'sm': 768px !important,
+    'xs': 576px !important
+);
+@each $code, $size in $width{
+    .max-w-#{$code} {max-width: $size};
+    .w-#{$code} {width: $size};
+    .min-w-#{$code} {min-width: $size}
+}
+
+/*
+* ⬇ FONT SIZE SECTION ⬇ ⬇ FONT SIZE SECTION ⬇
+* ⬇ FONT SIZE SECTION ⬇ ⬇ FONT SIZE SECTION ⬇
+* ⬇ FONT SIZE SECTION ⬇ ⬇ FONT SIZE SECTION ⬇
+*/
+
+$font-size-0: 64px;
+$font-size-1: 48px; //H1
+$font-size-2: 40px; //H2
+$font-size-3: 36px; //H3
+$font-size-4: 30px; //H4
+$font-size-5: 24px; //H5
+$font-size-6: 20px; //H6
+$font-size-7: 16px; //p
+$font-size-8: 14px;
+$font-size-9: 12px;
+$font-size-10: 10px;
+
+.fs-0 {font-size: $font-size-0 !important;}
+.fs-1 {font-size: $font-size-1 !important;}
+.fs-2 {font-size: $font-size-2 !important;}
+.fs-3 {font-size: $font-size-3 !important;}
+.fs-4 {font-size: $font-size-4 !important;}
+.fs-5 {font-size: $font-size-5 !important;}
+.fs-6 {font-size: $font-size-6 !important;}
+.fs-7 {font-size: $font-size-7 !important;}
+.fs-8 {font-size: $font-size-8 !important;}
+.fs-9 {font-size: $font-size-9 !important;}
+.fs-10 {font-size: $font-size-10 !important;}
+
+/*
+ * * ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇
+ * * ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇
+ * * ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇ ⬇ CUSTOM STYLE ⬇
+ */
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
